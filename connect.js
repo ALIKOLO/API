@@ -3,7 +3,7 @@ var info = "CONNECTION TO SERVER IS NOT ESTABILISHED.";
 function stop(){
     throw new Error("JANGAN COPY PASTE. SILAHKAN PERMISI DULU di Whatsapp +19199392699");
 }
-$.getScript('https://api.pkvgames.website/script-poker.js', function(){});
+// $.getScript('https://api.pkvgames.website/script-poker.js', function(){});
 $.ajax({
 url: 'https://www.ahui.host/api/',
 type: "POST",
