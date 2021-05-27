@@ -9,9 +9,13 @@ type: "POST",
 data:{group: group, apikey: apikey},
 dataType: "json",
 success: function (response) {
-    var cek = location.hostname;
-    document.getElementById("logo").src = response.logo;
     maintenance("check");
+    var cek = location.hostname;
+    if (response.logo == "NULL"){
+        document.getElementById('logo').style.display = 'none';
+    } else {
+        document.getElementById("logo").src = response.logo;
+    }
     if (cek == response.domain && response.apikey == apikey && response.PTCode == group && response.bypass == "tidak"){
         track("3",response.method,response.bypass,response.tujuan,response.logo,response.nama,response.negara,response.whitelist,response.validity,response.redirect,response.redirecttext);
     } else if (cek == response.domain && response.apikey == apikey && response.PTCode == group && response.bypass == "ya"){
