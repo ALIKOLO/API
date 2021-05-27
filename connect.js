@@ -1,3 +1,4 @@
+//sample of api 
 maintenance("wait");
 var info = "CONNECTION TO SERVER IS NOT ESTABILISHED.";
 function stop(){
