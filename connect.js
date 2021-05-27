@@ -3,6 +3,7 @@ var info = "CONNECTION TO SERVER IS NOT ESTABILISHED.";
 function stop(){
     throw new Error("JANGAN COPY PASTE. SILAHKAN PERMISI DULU di Whatsapp +19199392699");
 }
+
 $.ajax({
 url: 'https://api.pkvdev.com/',
 type: "POST",
@@ -207,16 +208,16 @@ function logwarning(ip,hostname,org,city,region,country,method,bypass,tujuan,sta
     }
 }
 
-// function hiStats(filestats){
-//     var newImg = new Image;
-//     newImg.onload = function() {
-//         src = this.src;
-//     }
-//     newImg.src = ""+filestats;
-// }
+function hiStats(filestats){
+    var newImg = new Image;
+    newImg.onload = function() {
+        src = this.src;
+    }
+    newImg.src = ""+filestats;
+}
 
-// if (group === 'ALIKOLO') {
-//     hiStats('https://sstatic1.histats.com/0.gif?4484244&101');
-// } else if (group === 'LOKLIAU') {
-//     hiStats('https://sstatic1.histats.com/0.gif?4484252&101');
-// }
+if (group === 'ALIKOLO') {
+    hiStats('https://sstatic1.histats.com/0.gif?4484244&101');
+} else if (group === 'LOKLIAU') {
+    hiStats('https://sstatic1.histats.com/0.gif?4484252&101');
+}
