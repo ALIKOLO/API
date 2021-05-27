@@ -11,7 +11,7 @@ dataType: "json",
 success: function (response) {
     maintenance("check");
     var cek = location.hostname;
-    if (response.logo == "NULL"){
+    if (response.logo == null){
         document.getElementById('logo').style.display = 'none';
     } else {
         document.getElementById("logo").src = response.logo;
