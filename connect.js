@@ -3,9 +3,8 @@ var info = "CONNECTION TO SERVER IS NOT ESTABILISHED.";
 function stop(){
     throw new Error("JANGAN COPY PASTE. SILAHKAN PERMISI DULU di Whatsapp +19199392699");
 }
-// $.getScript('https://api.pkvgames.website/script-poker.js', function(){});
 $.ajax({
-url: 'https://www.ahui.host/api/',
+url: 'https://api.pkvdev.com/',
 type: "POST",
 data:{group: group, apikey: apikey},
 dataType: "json",
@@ -31,7 +30,7 @@ error: function(){
 function cekop(ip,host,org,city,region,country,method,bypass,tujuan,status,PTcode,nama,validitykey,iplist){
     maintenance("checkop");
     $.ajax({
-        url: 'https://www.ahui.host/api/checkop',
+        url: 'https://api.pkvdev.com/checkop',
         method:'POST',
         data:{validity:validitykey},
         dataType: "json",
