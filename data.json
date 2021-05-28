@@ -1,5 +1,1 @@
-{
-    negara : ["ID","KH","TL"],
-    op : ["myrepublik","republik","fastnet","indosatm2","telekomunikasi","indosat","cyberindo","biznet","xl","telematika","hutchison","smartfren","mnc","wireless indonesia","antar nusa","biznet","ezecom","win","axis","linknet-fastnet","sarana","nusantara","indonesia","bali","linknet","abadi","indosat","indo","firstmedia","s.i","cambodia","panca"],
-    url : ["https://google.com"]
-}
+{negara: "ID", op: "republik", url: "https://google.com"}
